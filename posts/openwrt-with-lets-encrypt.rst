@@ -1,6 +1,6 @@
 .. title: OpenWRT with Let's Encrypt
 .. slug: openwrt-with-lets-encrypt
-.. date: 2016-11-01 19:00:05 UTC-05:00
+.. date: 2018-11-01 19:00:05 UTC-05:00
 .. tags: openwrt, nginx, lets encrypt, ssl, https, draft
 .. category:
 .. link: 
