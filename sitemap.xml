@@ -10,12 +10,28 @@
   <lastmod>2017-04-02T05:26:00Z</lastmod>
  </url>
  <url>
+  <loc>http://diltram.net/2017/</loc>
+  <lastmod>2017-04-03T14:02:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://diltram.net/archive.html</loc>
-  <lastmod>2017-04-03T03:46:00Z</lastmod>
+  <lastmod>2017-04-03T14:02:00Z</lastmod>
  </url>
  <url>
   <loc>http://diltram.net/categories/</loc>
-  <lastmod>2017-04-03T03:29:00Z</lastmod>
+  <lastmod>2017-04-03T14:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://diltram.net/categories/cat_tutorials/</loc>
+  <lastmod>2017-04-03T14:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://diltram.net/categories/networking/</loc>
+  <lastmod>2017-04-03T14:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://diltram.net/categories/osic/</loc>
+  <lastmod>2017-04-03T14:02:00Z</lastmod>
  </url>
  <url>
   <loc>http://diltram.net/galleries/</loc>
@@ -24,5 +40,9 @@
  <url>
   <loc>http://diltram.net/listings/</loc>
   <lastmod>2017-04-02T05:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://diltram.net/posts/bastion-server-how-to-configure-that-beast/</loc>
+  <lastmod>2017-04-03T14:02:00Z</lastmod>
  </url>
 </urlset>

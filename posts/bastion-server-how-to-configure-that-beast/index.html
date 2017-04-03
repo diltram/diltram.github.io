@@ -5,43 +5,53 @@ article: http://ogp.me/ns/article#
 " lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Diltram's blog about technology, cloudsand sometimes networking.">
+<meta name="description" content="Configuring and using jumpbox/bastion to access private servers">
 <meta name="viewport" content="width=device-width">
-<title>Diltram's blog | Diltram's blog</title>
-<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<link rel="canonical" href="http://diltram.net/">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+<title>Bastion server - how to configure that beast | Diltram's blog</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://diltram.net/posts/bastion-server-how-to-configure-that-beast/">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Lubosz " diltram kosnik>
+<meta property="og:site_name" content="Diltram's blog">
+<meta property="og:title" content="Bastion server - how to configure that beast">
+<meta property="og:url" content="http://diltram.net/posts/bastion-server-how-to-configure-that-beast/">
+<meta property="og:description" content="Configuring and using jumpbox/bastion to access private servers">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-04-03T09:00:00-05:00">
+<meta property="article:tag" content="networking">
+<meta property="article:tag" content="osic">
 </head>
 <body>
     <section class="social"><ul>
-<li><a href="#" title="Home"><i class="icon-home"></i></a></li>
-            <li><a href="archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
-            <li><a href="categories/" title="Tags"><i class="icon-tags"></i></a></li>
-            <li><a href="rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+<li><a href="../../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../../categories/" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
             <li><a href="https://github.com/diltram" title="My Github"><i class="icon-github"></i></a></li>
 
         </ul></section><section class="page-content"><div class="content" rel="main">
-        <div class="post">
-            <h1 class="title"><a href="posts/bastion-server-how-to-configure-that-beast/">Bastion server - how to configure that beast</a></h1>
-            <div class="meta">
-                <div class="authordate">
-                    <time class="timeago" datetime="2017-04-03T09:00:00-05:00">2017-04-03 09:00</time>
-</div>
-                <div class="stats">
-                    
-                </div>
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Bastion server - how to configure that beast</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2017-04-03T09:00:00-05:00">2017-04-03 09:00</time>
+            
+                      |  
+        <a href="index.rst" id="sourcelink">Source</a>
+
+            </div>
                     <div itemprop="keywords" class="tags">
         <ul>
         Tags : 
-           <li><a class="tag p-category" href="categories/networking/" rel="tag">networking</a></li>
-           <li><a class="tag p-category" href="categories/osic/" rel="tag">osic</a></li>
+           <li><a class="tag p-category" href="../../categories/networking/" rel="tag">networking</a></li>
+           <li><a class="tag p-category" href="../../categories/osic/" rel="tag">osic</a></li>
         </ul>
 </div>
 
-            </div>
-            <div class="body">
-                <div>
+        </div>
+        <div class="body">
+            <div>
 <p>I was thinking about this post for a long time, especially that it's my first
 one on this blog. To not make it too long and too complicated I'm gonna just
 jump into the topic.</p>
@@ -90,11 +100,11 @@ we just need to write 4 lines of configuration and never again copy any keys
 around the servers, especially if there is a lot of them and many people has
 access to them with same privileges.</p>
 </div>
-            </div>
         </div>
-    
-    
-    
+        
+        
+    </div>
+
                      <footer id="footer"><p>Contents © 2017         <a href="mailto:diltram@gmail.com">Lubosz "diltram" Kosnik</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
@@ -106,7 +116,7 @@ access to them with same privileges.</p>
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-12570420-7', 'auto');
   ga('send', 'pageview');
-</script><script src="assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+</script><script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
             $(function(){
                 $('.timeago').timeago();
             });
