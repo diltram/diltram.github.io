@@ -1,0 +1,4 @@
+Sitemap: http://diltram.net/sitemapindex.xml
+
+User-Agent: *
+Host: diltram.net
