@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<html prefix="
-og: http://ogp.me/ns#
-article: http://ogp.me/ns/article#
-" lang="en">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="description" content="Configuring and using jumpbox/bastion to access private servers">
@@ -11,7 +8,8 @@ article: http://ogp.me/ns/article#
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://diltram.net/posts/bastion-server-how-to-configure-that-beast/">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Lubosz " diltram kosnik>
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="cf-2fa-verify" content="d2a4e0c7ba32c6e">
+<meta name="author" content="Lubosz " diltram kosnik>
 <meta property="og:site_name" content="Diltram's blog">
 <meta property="og:title" content="Bastion server - how to configure that beast">
 <meta property="og:url" content="http://diltram.net/posts/bastion-server-how-to-configure-that-beast/">
@@ -67,16 +65,16 @@ It's gonna require from us just one configuration - your ssh config file located
 usually in <em>~/.ssh/config</em>. In this file, you can specify a lot of options.
 To access complete documentation you can read <em>man ssh_config</em> or <a class="reference external" href="https://www.freebsd.org/cgi/man.cgi?query=ssh_config&amp;sektion=5">here</a>.</p>
 <p>Let's do it. What we need to configure in ssh config:</p>
-<pre class="code bash"><a name="rest_code_bb8fabcbe97244ef8856462b1dbe5a15-1"></a>Host                    bastion
-<a name="rest_code_bb8fabcbe97244ef8856462b1dbe5a15-2"></a>ForwardAgent            yes
-<a name="rest_code_bb8fabcbe97244ef8856462b1dbe5a15-3"></a>
-<a name="rest_code_bb8fabcbe97244ef8856462b1dbe5a15-4"></a>Host                    host-behind-firewall
-<a name="rest_code_bb8fabcbe97244ef8856462b1dbe5a15-5"></a>ProxyCommand            ssh -W %h:%p -q bastion
+<pre class="code bash"><a name="rest_code_a8f0c28b386340b4abe9885e5f4520bf-1"></a>Host                    bastion
+<a name="rest_code_a8f0c28b386340b4abe9885e5f4520bf-2"></a>ForwardAgent            yes
+<a name="rest_code_a8f0c28b386340b4abe9885e5f4520bf-3"></a>
+<a name="rest_code_a8f0c28b386340b4abe9885e5f4520bf-4"></a>Host                    host-behind-firewall
+<a name="rest_code_a8f0c28b386340b4abe9885e5f4520bf-5"></a>ProxyCommand            ssh -W %h:%p -q bastion
 </pre>
 <p>We're using here two specific configuration options:</p>
 <ul class="simple">
-<li>ForwardAgent</li>
-<li>ProxyCommand</li>
+<li><p>ForwardAgent</p></li>
+<li><p>ProxyCommand</p></li>
 </ul>
 <p>These options enable whole magic for us. <em>ForwardAgent</em> like the name says
 enables forwarding of your local ssh-agent into the remote server. It means
@@ -84,7 +82,7 @@ that your locally loaded ssh keys, ssh config are sent to the remote host to
 allow for the reusability there. The <em>ProxyCommand</em> allows us to execute some
 commands before real sshing into the remote machine.
 How we're gonna use this:</p>
-<pre class="code bash"><a name="rest_code_9d141c065ec3426bab8682108de15be5-1"></a>ssh host-behind-firewall
+<pre class="code bash"><a name="rest_code_1693723cc9ae4e3c8b92224d9ddbff9a-1"></a>ssh host-behind-firewall
 </pre>
 <p>The agent will execute <em>ProxyCommand</em>. At first, it's gonna ssh us to
 <em>bastion</em> server. To connect to this server agent will read our config file and
@@ -102,10 +100,11 @@ access to them with same privileges.</p>
 </div>
         </div>
         
-        
+            
+
     </div>
 
-                     <footer id="footer"><p>Contents © 2017         <a href="mailto:diltram@gmail.com">Lubosz "diltram" Kosnik</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2020         <a href="mailto:diltram@gmail.com">Lubosz "diltram" Kosnik</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

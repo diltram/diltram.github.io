@@ -7,26 +7,22 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://diltram.net/categories/cat_tutorials.xml</loc>
-  <lastmod>2017-04-03T14:02:00Z</lastmod>
+  <lastmod>2020-01-03T18:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://diltram.net/categories/networking.xml</loc>
-  <lastmod>2017-04-03T14:02:00Z</lastmod>
+  <lastmod>2020-01-03T18:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://diltram.net/categories/osic.xml</loc>
-  <lastmod>2017-04-03T14:02:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://diltram.net/galleries/rss.xml</loc>
-  <lastmod>2017-04-03T03:46:00Z</lastmod>
+  <lastmod>2020-01-03T18:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://diltram.net/rss.xml</loc>
-  <lastmod>2017-04-03T14:02:00Z</lastmod>
+  <lastmod>2020-01-03T18:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://diltram.net/sitemap.xml</loc>
-  <lastmod>2017-04-03T14:02:00Z</lastmod>
+  <lastmod>2020-01-03T18:42:00Z</lastmod>
  </sitemap>
 </sitemapindex>
